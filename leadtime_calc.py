@@ -3,9 +3,8 @@
 from datetime import datetime
 from datetime import timedelta
 
-
 now = datetime.now()
-wdlt = 50
+wdlt = s
 cdlt = (wdlt / 5) * 7
     
 due = now + timedelta(days=cdlt)

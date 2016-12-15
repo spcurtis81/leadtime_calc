@@ -10,9 +10,18 @@ mainView.wm_title("Lead Time Calc")
 mainView.geometry("{}x{}".format(300, 300))
 
 Label(mainView, text="Enter lead time in working days:").pack()
-e = Entry(mainView).pack()
+
+v = StringVar()
+e = Entry(mainView, textvariable=v)
+e.pack()
+
+v.set("a default value")
+s = v.get()
+
 Button(mainView, text="Calculate").pack()
 Label(mainView, text="Expected Date: {}".format(expected)).pack()
+
+
 
 
 mainView.mainloop()
